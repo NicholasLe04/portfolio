@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
-}
+.Root {
+  height: 100vh;
+  width: 100vw;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(39, 40, 34);
+  font-family: "open-sans", serif;
+  font-size: 40px;
   color: white;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Root img {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  filter: invert();
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#title {
+  position: absolute;
+  top: 5px;
+  left: 50px;
+
+  font-size: 30px;
+
+  transition: color 0.1s ease-in-out;
+}
+
+#title:hover {
+  color:rgb(162, 226, 46);
+}
+
+.Landing {
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.Landing a {
+  text-decoration: none;
+}
+
+.Keyword {
+  color: rgb(249, 38, 93);
+}
+
+.Keyword-2 {
+  color: rgb(102, 206, 200);
+}
+
+.Method-Class {
+  color: rgb(162, 226, 46);
+  transition: font-size 0.25s ease-in-out;
+}
+
+.Method-Class:hover {
+  color: white;
+  font-size: 41px;
+}
+
+.String {
+  color: rgb(225, 212, 109);
+}
+
+.Values {
+  color: rgb(174, 129, 248);
+}
+
+.Parameters {
+  color: rgb(253, 142, 33);
+}
+
+.Comment {
+  color: rgb(117, 113, 88);
+}
+
+.method-definition {
+  padding-left: 100px;
+}
+
+.array-elements {
+  padding-left: 100px;
+}
+
+.skills-and-interests {
+  padding: 200px;
+}
+
+@font-face {
+  font-family: "open-sans";
+  src: url('../public/font/Menlo-Regular.ttf');
 }
