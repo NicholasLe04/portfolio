@@ -2,62 +2,68 @@ const OPEN_CURLY = "{";
 const CLOSE_CURLY = "}";
 
 const languages = [ "Python", "Java", "HTML", "CSS", "JavaScript", "SQL", "Bash" ];
-const frameworksAndTools = [ "Docker", "Git", "Linux", "React.js", "Express.js", "Node.js" ];
+const toolsAndFrameworks = [ "Docker", "Git", "Linux", "React.js", "Express.js", "Node.js" ];
 const interests = [ "Video Games/Esports", "Basketball", "Badminton", "Comedy" ];
 
 function SkillsAndInterests() {
     return (
-        <div className="skills-and-interests">
-            <span className="Keyword">public</span> <span className="Keyword-2">String</span>[] <span className="Method-Class">getSkillAndInterests</span>() {OPEN_CURLY}<br/>
+        <div className="info-page skills-and-interests">
+            <span className="Keyword">def</span> <span className="Method-Class">get_skills_and_interests</span>(): <br/>
             <br/>
-            <div className="method-definition">
-                <span className="Keyword">public</span> <span className="Keyword-2">String</span>[] languages <span className="Keyword">=</span> {OPEN_CURLY} <br/>
-                    <div className="array-elements">
-                        {
-                            languages.map((language, i) => {
-                                return (
-                                    <>
-                                        <span className="String">"{language}"</span>
-                                        {(i != languages.length-1 ) && <>,</>}
-                                    </>
-                                );
-                            })
-                        }
-                    </div>
-                {CLOSE_CURLY}; 
+            <div className="definition">
+                skills_and_interests <span className="Keyword-2">=</span> {OPEN_CURLY}<br/>
+                <div className="definition">
+                    <span className="Keyword">"languages"</span>: [<br/>
+                        <div className="definition">
+                            {
+                                languages.map((language, i) => {
+                                    return (
+                                        <>
+                                            <span className="String">'{language}'</span>
+                                            {(i !== languages.length-1 ) && <>,</>}
+                                        </>
+                                    );
+                                })
+                            }
+                        </div>
+                    ],
+                    <br/>
+                    <span className="Keyword">"tools_and_frameworks"</span>: [<br/>
+                        <div className="definition">
+                            {
+                                toolsAndFrameworks.map((tool, i) => {
+                                    return (
+                                        <>
+                                            <span className="String">'{tool}'</span>
+                                            {(i !== toolsAndFrameworks.length-1 ) && <>,</>}
+                                        </>
+                                    );
+                                })
+                            }
+                        </div>
+                    ],
+                    <br/>
+                    <span className="Keyword">"interests"</span>: [<br/>
+                        <div className="definition">
+                            {
+                                interests.map((interest, i) => {
+                                    return (
+                                        <>
+                                            <span className="String">'{interest}'</span>
+                                            {(i !== interests.length-1 ) && <>,</>}
+                                        </>
+                                    );
+                                })
+                            }
+                        </div>
+                    ]
+                    <br/>
+                </div>
+                {CLOSE_CURLY}
                 <br/>
-                <span className="Keyword">public</span> <span className="Keyword-2">String</span>[] frameworksAndTools <span className="Keyword">=</span> {OPEN_CURLY} <br/>
-                    <div className="array-elements">
-                        {
-                            frameworksAndTools.map((framework, i) => {
-                                return (
-                                    <>
-                                        <span className="String">"{framework}"</span>
-                                        {(i != frameworksAndTools.length-1 ) && <>,</>}
-                                    </>
-                                );
-                            })
-                        }
-                    </div>
-                {CLOSE_CURLY};
                 <br/>
-                <span className="Keyword">public</span> <span className="Keyword-2">String</span>[] interests <span className="Keyword">=</span> {OPEN_CURLY} <br/>
-                    <div className="array-elements">
-                        {
-                            interests.map((interest, i) => {
-                                return (
-                                    <>
-                                        <span className="String">"{interest}"</span>
-                                        {(i != interests.length-1 ) && <>,</>}
-                                    </>
-                                );
-                            })
-                        }
-                    </div>
-                {CLOSE_CURLY};
-                <br/>
+                <span className="Values">return</span> skills_and_interests
             </div>
-            
         </div>
     );
 }

@@ -1,5 +1,5 @@
 .Root {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 
   background-color: rgb(39, 40, 34);
@@ -13,11 +13,19 @@
   align-items: center;
 }
 
+.Root a {
+  text-decoration: none;
+}
+
 .Root img {
   position: absolute;
   top: 25px;
   right: 25px;
   filter: invert();
+}
+
+.info-page {
+  padding: 100px;
 }
 
 #title {
@@ -40,16 +48,12 @@
   padding-right: 100px;
 }
 
-.Landing a {
-  text-decoration: none;
-}
-
 .Keyword {
-  color: rgb(249, 38, 93);
+  color: rgb(102, 206, 200);
 }
 
 .Keyword-2 {
-  color: rgb(102, 206, 200);
+  color: rgb(249, 38, 93);
 }
 
 .Method-Class {
@@ -78,16 +82,16 @@
   color: rgb(117, 113, 88);
 }
 
-.method-definition {
-  padding-left: 100px;
-}
-
-.array-elements {
+.definition {
   padding-left: 100px;
 }
 
 .skills-and-interests {
-  padding: 200px;
+  font-size: 30px;
+}
+
+.projects {
+  font-size: 30px;
 }
 
 @font-face {

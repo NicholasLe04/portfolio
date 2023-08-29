@@ -5,6 +5,7 @@ import Landing from './components/pages/Landing';
 import Links from './components/pages/Links';
 import SkillsAndInterests from './components/pages/SkillAndInterests';
 import Projects from './components/pages/Projects';
+import Random from './components/pages/Random';
 
 function Root() {
   const navigate = useNavigate();
@@ -18,6 +19,7 @@ function Root() {
         <Route path="/skills-and-interests" element={<SkillsAndInterests />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/links" element={<Links />} />
+        <Route path="/fun" element={<Random />} />
       </Routes>
     </div>
   );
